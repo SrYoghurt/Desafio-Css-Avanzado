@@ -9,6 +9,7 @@ header {
     display: flex;
     grid-area: cabecera;
     background-color: lightcoral;
+    background-image: linear-gradient(to bottom, lightcoral, lightpink);
     align-items: center;
     justify-content: center;
 }
@@ -30,6 +31,7 @@ header img {
 menu {
     grid-area: menu-lateral;
     background-color: lightpink;
+    background-image: linear-gradient(to bottom, lightpink, bisque);
 }
 
 menu .lista-menu {
@@ -57,8 +59,16 @@ menu .lista-menu li a:hover {
     border-radius: 5px;
 }
 main {
-    grid-area: contenido;
-    background-color: mediumorchid;
+    grid-area: contenido;   
+}
+.contenido-principal {
+    padding: 2rem;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    background-color:bisque;
+    font-family: Inter, sans-serif;
 }
 
 footer {
