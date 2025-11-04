@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Raleway, Roboto, Inter, Lora, Fjalla One, Roboto mono, Dancing Script, sans-serif;
+}
+
+header {
+    display: flex;
+    grid-area: cabecera;
+    background-color: lightcoral;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1 {
+    font-family: Dancing Script, sans-serif;
+    text-align: center;
+    padding: 1rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+header img {
+    width: auto;
+    height: 100px;
+    margin-right: 1rem;
+}
+
+menu {
+    grid-area: menu-lateral;
+    background-color: lightpink;
+}
+
+menu .lista-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 1rem;
+    gap: 1rem;
+}
+menu .lista-menu li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+menu .lista-menu li a:hover {
+    background-color: white;
+    color: lightpink;
+    border-radius: 5px;
+}
+main {
+    grid-area: contenido;
+    background-color: mediumorchid;
+}
+
+footer {
+    grid-area: pie-de-pagina;
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+}
+
+svg {
+    width: 20px;
+    height: 20px;
+    fill: white;
+    margin-right: 0.5rem;
+}
+
+footer p {
+    padding: 1rem;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width:576px) {
+    .contenedor {
+        display: grid;
+        grid-template-areas:
+            "cabecera"
+            "menu-lateral"
+            "contenido"
+            "pie-de-pagina";
+        grid-template-rows: 1fr 2fr 12fr 1fr;
+        grid-template-columns: 1fr;
+        height: 100vh;
+    }
+}
+
+@media (min-width:577px) {
+    .contenedor {
+        display: grid;
+        grid-template-areas:
+            "cabecera cabecera"
+            "contenido menu-lateral"
+            "pie-de-pagina pie-de-pagina ";
+        grid-template-rows: 1fr 4fr 1fr;
+        grid-template-columns: 3fr 1fr;
+        height: 100vh;
+    }
+}
