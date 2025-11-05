@@ -38,8 +38,6 @@ menu .lista-menu {
     list-style: none;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     height: 100%;
     padding: 1rem;
     gap: 1rem;
@@ -65,6 +63,14 @@ main {
     grid-area: contenido;
     font-family: Lora, serif;
     background-color: lightyellow;
+}
+
+main h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 1rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .contenido-principal {
@@ -93,7 +99,6 @@ main {
     text-align: center;
     align-items: center;
     padding: 1rem;
-    background-color: lightyellow;
     color: white;
     text-shadow: 1px 1px 3px rgba(0.5, 0.5, 0.5, 0.5);
     font-family: Lora, sans-serif;
@@ -182,7 +187,6 @@ footer p {
             "menu-lateral"
             "contenido"
             "pie-de-pagina";
-        grid-template-rows: 1fr 2fr 12fr 1fr;
         grid-template-columns: 1fr;
         height: 100vh;
     }
@@ -196,25 +200,82 @@ footer p {
         background-image: linear-gradient(to bottom, lightpink, bisque);
     }
 
+    menu .lista-menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     main {
         background-image: linear-gradient(to bottom, bisque, lightyellow);
     }
 
     .galeria {
+        grid-template-columns: 1fr;
         background-image: linear-gradient(to bottom, bisque, lightyellow);
     }
 
 }
 
-@media (min-width:577px) {
+@media (min-width:768px) {
     .contenedor {
         display: grid;
         grid-template-areas:
             "cabecera cabecera"
             "contenido menu-lateral"
             "pie-de-pagina pie-de-pagina ";
-        grid-template-rows: 1fr 12fr 1fr;
-        grid-template-columns: 3fr 1fr;
+        grid-template-columns: 4fr 1fr;
         height: 100vh;
+    }
+
+    header {
+        background-image: linear-gradient(to bottom, lightcoral, bisque);
+    }
+
+    .imagenes-galeria {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        margin-top: 2rem;
+    }
+
+    menu {
+        background-image: linear-gradient(to right, bisque, lightpink);
+    }
+    menu .lista-menu{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: flex-start;
+    }
+    main{
+        background-image: linear-gradient(to bottom, bisque, lightyellow);
+    }
+}
+
+@media (min-width:1092px) {
+    .contenedor {
+        display: grid;
+        grid-template-areas:
+            "cabecera cabecera"
+            "contenido menu-lateral"
+            "pie-de-pagina pie-de-pagina ";
+        grid-template-columns: 4fr 1fr;
+        height: 100vh;
+    }
+
+    header {
+        background-image: linear-gradient(to bottom, lightcoral, bisque);
+    }
+
+    .imagenes-galeria {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        margin-top: 2rem;
+    }
+
+    menu {
+        background-image: linear-gradient(to right, bisque, lightpink);
     }
 }
