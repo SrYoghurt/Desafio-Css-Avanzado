@@ -79,7 +79,7 @@ main h2 {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     font-size: 1.5rem;
     line-height: 1.6;
-    background-color: bisque;
+    background-color: rgb(255, 211, 157);
     font-family: Inter, sans-serif;
 }
 
@@ -197,7 +197,7 @@ footer p {
     }
 
     menu {
-        background-image: linear-gradient(to bottom, lightpink, bisque);
+        background-image: linear-gradient(to bottom, lightpink, rgb(255, 211, 157));
     }
 
     menu .lista-menu {
@@ -207,12 +207,12 @@ footer p {
     }
 
     main {
-        background-image: linear-gradient(to bottom, bisque, lightyellow);
+        background-image: linear-gradient(to bottom, rgb(255, 211, 157), lightyellow);
     }
 
     .galeria {
         grid-template-columns: 1fr;
-        background-image: linear-gradient(to bottom, bisque, lightyellow);
+        background-image: linear-gradient(to bottom, rgb(255, 211, 157), lightyellow);
     }
 
 }
@@ -229,7 +229,7 @@ footer p {
     }
 
     header {
-        background-image: linear-gradient(to bottom, lightcoral, bisque);
+        background-image: linear-gradient(to bottom, lightcoral, rgb(255, 211, 157));
     }
 
     .imagenes-galeria {
@@ -240,7 +240,7 @@ footer p {
     }
 
     menu {
-        background-image: linear-gradient(to right, bisque, lightpink);
+        background-image: linear-gradient(to right, rgb(255, 211, 157), lightpink);
     }
     menu .lista-menu{
         display: flex;
@@ -249,7 +249,7 @@ footer p {
         justify-content: flex-start;
     }
     main{
-        background-image: linear-gradient(to bottom, bisque, lightyellow);
+        background-image: linear-gradient(to bottom, rgb(255, 211, 157), lightyellow);
     }
 }
 
@@ -265,7 +265,7 @@ footer p {
     }
 
     header {
-        background-image: linear-gradient(to bottom, lightcoral, bisque);
+        background-image: linear-gradient(to bottom, lightcoral, rgb(255, 211, 157));
     }
 
     .imagenes-galeria {
@@ -276,6 +276,6 @@ footer p {
     }
 
     menu {
-        background-image: linear-gradient(to right, bisque, lightpink);
+        background-image: linear-gradient(to right, rgb(255, 211, 157), lightpink);
     }
 }
